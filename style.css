@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #0a0a0a;
+}
+
+.player {
+    background: #1a1a1a;
+    padding: 25px;
+    border-radius: 20px;
+    width: 350px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 0 30px rgba(0,0,0,0.7);
+}
+
+/* Capa do Álbum */
+.capa-album {
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    border: 3px solid #ff5500;
+    box-shadow: 0 0 20px rgba(255,85,0,0.4);
+}
+
+/* Informações do Álbum */
+.info-album {
+    margin-bottom: 15px;
+}
+
+.info-album h1 {
+    font-size: 1.2em;
+    color: #ff5500;
+    margin-bottom: 5px;
+    text-transform: uppercase;
+}
+
+.artista {
+    color: #888;
+    font-size: 1.1em;
+}
+
+/* Informações da Música */
+.info-musica {
+    margin: 15px 0;
+}
+
+.titulo {
+    font-size: 1.4em;
+    margin-bottom: 10px;
+}
+
+.tempo {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9em;
+    color: #888;
+}
+
+/* Controles */
+.controles {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin: 20px 0;
+}
+
+.btn {
+    border: none;
+    background: #ff5500;
+    color: white;
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    font-size: 18px;
+    transition: all 0.3s;
+}
+
+.btn:hover {
+    background: #ff7733;
+    transform: scale(1.1);
+}
+
+/* Barra de Progresso */
+.barra-progresso {
+    background: #333;
+    height: 4px;
+    border-radius: 2px;
+    margin: 20px 0;
+    cursor: pointer;
+}
+
+.progresso {
+    background: #ff5500;
+    width: 0%;
+    height: 100%;
+    border-radius: 2px;
+    transition: width 0.1s linear;
+}
+
+/* Lista de Músicas */
+.lista-musicas {
+    margin-top: 15px;
+    height: auto; /* Remove a altura fixa */
+    overflow: visible; /* Elimina a barra de rolagem */
+}
+
+.musica {
+    white-space: nowrap; /* Impede que o texto quebre em várias linhas */
+    overflow: hidden;
+    text-overflow: ellipsis; /* Adiciona "..." se o texto for muito longo */    
+    margin: 12px 0; /* Aumenta o espaçamento vertical */
+    padding: 15px; /* Aumenta o espaço interno */
+
+}
+
+
+.musica:hover {
+    background: #ff5500;
+    transform: translateX(10px);
+}
